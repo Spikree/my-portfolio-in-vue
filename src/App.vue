@@ -1,33 +1,27 @@
 <script setup>
   import Header from './components/header.vue';
-  import one from './components/one.vue';
-  import About from './components/aboutMe.vue';
+  import profile from './components/profile.vue';
+  import projects from './components/projects.vue';
+  import footerr from './components/footer.vue';
+  import experience from './components/experience.vue';
+  import contact from './components/contact.vue';
+  import about from './components/about.vue';
+
 </script>
 
 <template>
   <div>
-    <section>
-      <Header />
-      <one />
-    </section>
-
-    <section>
-      <About/>
-    </section>
+    <Header />
+    <profile/>
+    <about/>
+    <experience/>
+    <projects/>
+    <contact/>
+    <footerr/>
    
   </div>
 </template>
 
 <style scoped>
-  section {
-    height: 100vh;
-  }
 
-  Header {
-    height: 30%;
-  }
-
-  one {
-    height: 70%;
-  }
 </style>

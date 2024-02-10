@@ -1,55 +1,41 @@
 <script setup>
-    const headerr = {
+    const header = {
        
 };
 </script>
 
 <template>
-    <header>
-        <div class="header">
-            <div class="logo">Avi</div>
-        </div>
-        <div class="options">
-            <ul>
-                <li>
-                    <a href="#">About</a>
-                </li>
-                <li>
-                    <a href="#">Experience</a>
-                </li>
-                <li>
-                    <a href="#">Contact</a>
-                </li>
-                <li>
-                    <a href="#">Project</a>
-                </li>
-            </ul>
-        </div>
-    </header>
+       <nav id="desktop-nav">
+    <div class="logo">Avi</div>
+    <div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            
+        </ul>
+    </div>
+   </nav>
+
+   <nav id="hamburger-nav">
+    <div class="logo">Avi</div>
+    <div class="hamburger-menu">
+    <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+    </div>
+    </div>
+   </nav>
 </template>
 
 <style scoped>
-    header {
-        display: flex;
-        justify-content: space-evenly;
-        padding-top: 30px;
-    }
 
-    ul {
-        display: flex;
-        gap: 30px;
-        list-style: none;
-        margin-top: 0;
-        padding-top: 0;
-    }
-
-    a{
-        text-decoration: none;
-        color: black;
-    }
-
-    li:hover {
-        text-decoration: underline;
-        color: gray;
-    }
 </style>
