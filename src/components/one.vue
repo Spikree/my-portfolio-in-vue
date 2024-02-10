@@ -30,7 +30,7 @@
 <style scoped>
     .one {
         display: flex;
-        height: 70vh;
+        /* height: 70vh; */
         justify-content: center;
         align-items: center;
         gap: 200px;

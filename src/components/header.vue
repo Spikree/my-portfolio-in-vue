@@ -47,4 +47,9 @@
         text-decoration: none;
         color: black;
     }
+
+    li:hover {
+        text-decoration: underline;
+        color: gray;
+    }
 </style>

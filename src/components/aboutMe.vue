@@ -1,6 +1,7 @@
 <template>
     <div class="about">
         <div class="top">
+            <div class="get">
             <div class="small">
                 Get to know more
             </div>
@@ -8,18 +9,19 @@
                 About me
             </div>
         </div>
+        </div>
         <div class="main">
             <div class="image">
                 <img src="https://spikree.github.io/my-portfolio/assets/about-pic.png" alt="toji aka me">
             </div>
             <div class="content">
             <div class="experience">
-                <h4>Experience</h4>
+                <h4 style="justify-content: center; display: flex;">Experience</h4>
                 <p>3+ months as an intern</p>
                 <p>Front end developement</p>
             </div>
             <div class="edu">
-                <h4>education</h4>
+                <h4 style="display: flex; justify-content: center;">education</h4>
                 <p>currently in third year of my computer science bachlors degree</p>
             </div>
         </div>
@@ -42,7 +44,7 @@
 
     .main {
         display: flex;
-        gap: 40px;
+        gap: 70px;
         justify-content: center;
         align-content: center;
     }
@@ -60,7 +62,11 @@
     .content {
         display: flex;
         gap: 100px;
+        margin-top: 90px;
+    }
+    
+    .larger {
+        display: flex;
         justify-content: center;
-        align-content: center;
     }
 </style>

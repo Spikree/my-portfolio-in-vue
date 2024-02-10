@@ -22,4 +22,12 @@
   section {
     height: 100vh;
   }
+
+  Header {
+    height: 30%;
+  }
+
+  one {
+    height: 70%;
+  }
 </style>
